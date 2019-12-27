@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TRASHFOLDER=~/.local/share/Trash/files
+
+rm -rf $TRASHFOLDER/*
