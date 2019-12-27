@@ -2,4 +2,8 @@
 
 TRASHFOLDER=~/.local/share/Trash/files
 
-rm -rf $TRASHFOLDER/*
+if [ -d $TRASHFOLDER ] ; then
+    rm -rf $TRASHFOLDER/*
+else
+    echo "Trashfolder does not exist"
+fi
